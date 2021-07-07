@@ -1,0 +1,261 @@
+@charset "UTF-8";
+/*Обнуление*/
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus,
+:active {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+  display: block;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input,
+button,
+textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+/*--------------------*/
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 1029px;
+  background: url("../img/header-bg.svg") no-repeat;
+  background-size: cover;
+}
+
+.header__nav {
+  width: 1621px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 88px;
+}
+
+.header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #0f7bff;
+  border-radius: 0px 0px 21.5px 21.5px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 45px;
+  color: #fff;
+  min-width: 179px;
+  min-height: 100px;
+}
+
+.header__menu {
+  min-width: 572px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.menu__item {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  text-transform: uppercase;
+  color: #000;
+}
+
+.menu__item a:hover {
+  color: #0f7cff;
+}
+
+.menu__item:last-child a {
+  padding: 15px 51px;
+  color: #fff;
+  background-color: #0063dd;
+  border-radius: 25px;
+}
+
+.header__title {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 45px;
+  color: #000000;
+}
+
+.header__text {
+  max-width: 655px;
+  margin: 0 auto;
+  font-size: 16px;
+  line-height: 27px;
+  text-align: center;
+  color: #929292;
+  margin-bottom: 33px;
+}
+
+.header__btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 0 auto 108px;
+}
+
+.header__btns .btn-secondary {
+  margin-left: 30px;
+}
+
+.btn-primary {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 20px;
+  color: #ffffff;
+  background: #0f7bff;
+  border-radius: 25px;
+  padding: 17px 44px 15px;
+}
+
+.btn-secondary {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 20px;
+  color: #0f7bff;
+  border: 2px solid #0f7bff;
+  border-radius: 25px;
+  padding: 15px 44px 17px;
+}
+
+.devices {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: relative;
+}
+
+.device {
+  z-index: 23;
+  overflow: hidden;
+}
+
+.device:first-child {
+  position: absolute;
+  top: 50px;
+  left: 520px;
+  z-index: 0;
+}
+
+.device:last-child {
+  position: absolute;
+  top: 50px;
+  right: 535px;
+  z-index: 0;
+}
+
+body {
+  font-family: "Quicksand", sans-serif;
+  font-weight: 400px;
+  font-size: 16px;
+  color: #000;
+}
+
+.wrapper {
+  max-width: 1146px;
+  margin: 0 auto;
+}

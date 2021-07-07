@@ -1,0 +1,124 @@
+.header {
+	display: flex;
+	flex-direction: column;
+	height: 1029px;
+	background: url("../img/header-bg.svg") no-repeat;
+	background-size: cover; //Рисунок едет, использовать проценты??
+
+	// background: linear-gradient(206.38deg, #0f7bff 8.31%, #0063dd 61.03%);
+	// box-shadow: -7px -7px 32px rgba(0, 30, 67, 0.06);
+}
+.header__nav {
+	width: 1621px;
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 88px;
+}
+.header__logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: #0f7bff;
+	border-radius: 0px 0px 21.5px 21.5px;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 45px;
+	color: #fff;
+	// text-align: center;
+	// padding-top: 25px;
+	min-width: 179px;
+	min-height: 100px;
+}
+.header__menu {
+	min-width: 572px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.menu__item {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 20px;
+	text-transform: uppercase;
+	color: #000;
+	& a:hover {
+		color: #0f7cff;
+	}
+	&:last-child a {
+		padding: 15px 51px;
+		color: #fff;
+		background-color: #0063dd;
+		border-radius: 25px;
+		// margin-left: 10px;
+		// подсветку мб добавить
+	}
+}
+.header__title {
+	text-align: center;
+	margin-bottom: 30px;
+	font-size: 36px;
+	font-weight: 700;
+	line-height: 45px;
+	color: #000000;
+}
+.header__text {
+	max-width: 655px;
+	margin: 0 auto;
+	font-size: 16px;
+	line-height: 27px;
+	text-align: center;
+	color: #929292;
+	margin-bottom: 33px;
+}
+.header__btns {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto 108px;
+	& .btn-secondary {
+		margin-left: 30px;
+	}
+}
+.btn-primary {
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 20px;
+	color: #ffffff;
+	background: #0f7bff;
+	border-radius: 25px;
+	padding: 17px 44px 15px;
+}
+.btn-secondary {
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 20px;
+	color: #0f7bff;
+	border: 2px solid #0f7bff;
+	border-radius: 25px;
+	padding: 15px 44px 17px;
+}
+.devices {
+	display: flex;
+	justify-content: center;
+	position: relative;
+	// overflow: hidden;
+}
+.device {
+	z-index: 23;
+	overflow: hidden; //не робит
+	&:first-child {
+		position: absolute;
+		top: 50px;
+		left: 520px;
+		z-index: 0;
+	}
+	&:last-child {
+		position: absolute;
+		top: 50px;
+		right: 535px;
+		z-index: 0;
+	}
+}
+.header__btn-next {
+	// scroll to 2
+}
