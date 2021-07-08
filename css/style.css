@@ -97,20 +97,18 @@ h6 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  height: 1029px;
-  background: url("../img/header-bg.svg") no-repeat;
-  background-size: cover;
+  max-height: 1029px;
+  background: url("../img/1-header/header-bg.svg") no-repeat right bottom;
+  overflow: hidden;
 }
 
 .header__nav {
-  width: 1621px;
-  margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-bottom: 88px;
 }
 
@@ -132,6 +130,7 @@ h6 {
   color: #fff;
   min-width: 179px;
   min-height: 100px;
+  margin: 0 auto;
 }
 
 .header__menu {
@@ -145,6 +144,7 @@ h6 {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin: 0 auto;
 }
 
 .menu__item {
@@ -152,18 +152,26 @@ h6 {
   font-size: 16px;
   line-height: 20px;
   text-transform: uppercase;
-  color: #000;
+}
+
+.menu__item a {
+  color: #929292;
+  padding: 20px 0;
 }
 
 .menu__item a:hover {
   color: #0f7cff;
 }
 
-.menu__item:last-child a {
+.btn-sign-up a {
   padding: 15px 51px;
   color: #fff;
   background-color: #0063dd;
   border-radius: 25px;
+}
+
+.btn-sign-up a:hover {
+  color: #fff;
 }
 
 .header__title {
@@ -219,6 +227,13 @@ h6 {
   padding: 15px 44px 17px;
 }
 
+.btn-hover:hover {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
 .devices {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -226,26 +241,145 @@ h6 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  position: relative;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .device {
-  z-index: 23;
-  overflow: hidden;
+  -o-object-fit: contain;
+     object-fit: contain;
+  z-index: 42;
+  position: relative;
+  top: -42px;
 }
 
 .device:first-child {
-  position: absolute;
-  top: 50px;
-  left: 520px;
+  position: relative;
+  top: -135px;
+  left: 90px;
   z-index: 0;
 }
 
 .device:last-child {
-  position: absolute;
-  top: 50px;
-  right: 535px;
+  position: relative;
+  top: -135px;
+  right: 108px;
   z-index: 0;
+}
+
+.btn-down::after {
+  content: "";
+  z-index: 100;
+  z-index: 43;
+  position: absolute;
+  left: 50%;
+  top: -35px;
+  -webkit-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background-color: #0063dd;
+  background-image: url(../img/2-features/btn-down.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  -webkit-animation-name: blue-circle;
+          animation-name: blue-circle;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+          animation-direction: alternate;
+}
+
+@-webkit-keyframes blue-circle {
+  0% {
+    -webkit-box-shadow: 0 0 0 22px rgba(0, 99, 221, 0.23);
+            box-shadow: 0 0 0 22px rgba(0, 99, 221, 0.23);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 11px rgba(0, 99, 221, 0.23);
+            box-shadow: 0 0 0 11px rgba(0, 99, 221, 0.23);
+  }
+}
+
+@keyframes blue-circle {
+  0% {
+    -webkit-box-shadow: 0 0 0 22px rgba(0, 99, 221, 0.23);
+            box-shadow: 0 0 0 22px rgba(0, 99, 221, 0.23);
+  }
+  100% {
+    -webkit-box-shadow: 0 0 0 11px rgba(0, 99, 221, 0.23);
+            box-shadow: 0 0 0 11px rgba(0, 99, 221, 0.23);
+  }
+}
+
+.features {
+  background-color: #f5fcfd;
+  position: relative;
+  padding: 165px 0 180px;
+}
+
+.features__items {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.feature__item {
+  margin-right: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #fff;
+  -webkit-box-shadow: 0px 4px 16px rgba(0, 66, 148, 0.08);
+          box-shadow: 0px 4px 16px rgba(0, 66, 148, 0.08);
+  border-radius: 5px;
+  padding-top: 40px;
+}
+
+.feature__item:last-child {
+  margin-right: 0;
+}
+
+.feature__item:nth-child(even) {
+  position: relative;
+  top: 48px;
+}
+
+.feature__img {
+  width: 70px;
+  height: 70px;
+  margin-bottom: 25px;
+}
+
+.feature__title {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  color: #000;
+  margin-bottom: 25px;
+}
+
+.feature__text {
+  max-width: 333px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 48px;
 }
 
 body {
@@ -258,4 +392,67 @@ body {
 .wrapper {
   max-width: 1146px;
   margin: 0 auto;
+}
+
+.about {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 60px;
+}
+
+.about__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 233px;
+}
+
+.about__item:last-child {
+  margin-bottom: 116px;
+}
+
+.about__img {
+  margin-right: 128px;
+}
+
+.about__info {
+  padding-top: 94px;
+  position: relative;
+}
+
+.about__title {
+  font-weight: 500;
+  font-size: 32px;
+  line-height: 40px;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.about__text {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  color: #000000;
+  margin-bottom: 30px;
+}
+
+.btn-read-more {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #0063dd;
+}
+
+.btn-read-more::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 70px;
+  height: 110px;
+  background: url("../img/3-about/arrow-read-more.svg") no-repeat;
 }

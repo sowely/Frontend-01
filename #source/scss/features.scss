@@ -1,0 +1,76 @@
+.btn-down::after {
+	content: "";
+	z-index: 100;
+	z-index: 43;
+	position: absolute;
+	left: 50%;
+	top: -0.5 * 70px;
+	transform: translate(-50%, 0);
+	width: 70px;
+	height: 70px;
+	border-radius: 100%;
+	background-color: #0063dd;
+	background-image: url(../img/2-features/btn-down.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	animation-name: blue-circle;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes blue-circle {
+	0% {
+		box-shadow: 0 0 0 22px rgba(0, 99, 221, 0.23);
+	}
+	100% {
+		box-shadow: 0 0 0 11px rgba(0, 99, 221, 0.23);
+	}
+}
+
+.features {
+	background-color: #f5fcfd;
+	position: relative;
+	padding: 165px 0 180px;
+}
+.features__items {
+	display: flex;
+}
+.feature__item {
+	margin-right: 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: #fff;
+	box-shadow: 0px 4px 16px rgba(0, 66, 148, 0.08);
+	border-radius: 5px;
+	padding-top: 40px;
+	&:last-child {
+		margin-right: 0;
+	}
+	&:nth-child(even) {
+		position: relative;
+		top: 48px;
+	}
+}
+.feature__img {
+	width: 70px;
+	height: 70px;
+	margin-bottom: 25px;
+}
+.feature__title {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	color: #000;
+	margin-bottom: 25px;
+}
+.feature__text {
+	max-width: 333px;
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 20px;
+	text-align: center;
+	color: #000;
+	margin-bottom: 48px;
+}

@@ -1,5 +1,6 @@
 @import "nullstyle.scss";
 @import "header.scss";
+@import "features.scss";
 
 body {
 	font-family: "Quicksand", sans-serif;
@@ -10,4 +11,53 @@ body {
 .wrapper {
 	max-width: 1146px;
 	margin: 0 auto;
+}
+
+// -------------
+.about {
+	display: flex;
+	flex-direction: column;
+	margin-top: 60px;
+}
+.about__item {
+	display: flex;
+	margin-bottom: 233px;
+	&:last-child {
+		margin-bottom: 116px;
+	}
+}
+.about__img {
+	margin-right: 128px;
+}
+.about__info {
+	padding-top: 94px;
+	position: relative;
+}
+.about__title {
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 40px;
+	color: #000000;
+	margin-bottom: 30px;
+}
+.about__text {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 150%;
+	color: #000000;
+	margin-bottom: 30px;
+}
+.btn-read-more {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 150%;
+	color: #0063dd;
+	&::after {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 70px;
+		height: 110px;
+		background: url("../img/3-about/arrow-read-more.svg") no-repeat;
+	}
 }
