@@ -6,7 +6,7 @@
 
 	// background-size: cover; //Рисунок едет, использовать проценты??
 	overflow: hidden;
-
+	// z-index: -4;
 	// background: linear-gradient(206.38deg, #0f7bff 8.31%, #0063dd 61.03%);
 	// box-shadow: -7px -7px 32px rgba(0, 30, 67, 0.06);
 }
@@ -122,23 +122,45 @@
 	// position: relative;
 }
 .device {
-	// flex: 0 1 auto;
-	// width: 100%;
-	// height: 100%;
 	object-fit: contain;
-	z-index: 42;
 	position: relative;
-	top: -42px;
+	top: -135px;
+	left: -108px;
 	&:first-child {
-		position: relative;
+		order: -2;
 		top: -135px;
 		left: 90px;
-		z-index: 0;
 	}
 	&:last-child {
-		position: relative;
-		top: -135px;
-		right: 108px;
-		z-index: 0;
+		order: -1;
+		top: -42px;
+		left: 0px;
+	}
+}
+.btn-down::after {
+	content: "";
+	position: absolute;
+	left: 50%;
+	top: -0.5 * 70px + 1029px;
+	transform: translate(-50%, 0);
+	width: 70px;
+	height: 70px;
+	border-radius: 100%;
+	background-color: #0063dd;
+	background-image: url(../img/1-header/btn-down.svg);
+	background-repeat: no-repeat;
+	background-position: center;
+	animation-name: blue-circle;
+	animation-duration: 1s;
+	animation-timing-function: ease-out;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+}
+@keyframes blue-circle {
+	0% {
+		box-shadow: 0 0 0 22px rgba(0, 99, 221, 0.23);
+	}
+	100% {
+		box-shadow: 0 0 0 11px rgba(0, 99, 221, 0.23);
 	}
 }
