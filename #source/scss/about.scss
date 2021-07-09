@@ -36,10 +36,12 @@
 	border-radius: 40px;
 	transform: matrix(0.77, -0.64, -0.64, -0.77, 0, 0);
 	top: 30px;
-	right: -100px;
 }
 .about__img {
 	object-fit: contain;
+	&:last-child{
+		margin-right: 98px;
+	}
 }
 .about__info {
 	padding-top: 94px;

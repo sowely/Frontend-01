@@ -6,10 +6,13 @@
 }
 .features__items {
 	display: flex;
-	padding: 0 15px;
+	justify-content: space-between;
 }
 .feature__item {
-	margin-right: 30px;
+	width: 362px;
+	flex-shrink: 1;
+	flex-grow: 0;
+	justify-self: flex-end;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -17,12 +20,10 @@
 	box-shadow: 0px 4px 16px rgba(0, 66, 148, 0.08);
 	border-radius: 5px;
 	padding-top: 40px;
-	&:last-child {
-		margin-right: 0;
-	}
 	&:nth-child(2) {
 		position: relative;
 		top: 48px;
+
 	}
 }
 .feature__img {

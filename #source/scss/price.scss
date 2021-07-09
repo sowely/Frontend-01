@@ -1,0 +1,126 @@
+.price {
+	margin: 130px 0;
+	display: flex;
+	// justify-content: space-between;
+	align-items: center;
+}
+.price__info {
+	max-width: 333px;
+	margin-right: 60px;
+	overflow: hidden;
+}
+.info__title {
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 40px;
+	margin-bottom: 30px;
+}
+.info__text {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 150%;
+	margin-bottom: 40px;
+}
+.info__btns {
+	display: flex;
+}
+.info__btn-month {
+	background: #ffffff;
+	border: 3px solid #0f7bff;
+	border-radius: 25px 0px 0px 25px;
+	padding: 14px 50px 16px;
+	color: #0063dd;
+	font-weight: 700;
+	line-height: 20px;
+	font-size: 16px;
+}
+.info__btn-year {
+	background: #ffffff;
+	border: 3px solid #0f7bff;
+	border-radius: 0px 25px 25px 0px;
+	padding: 14px 55px 16px;
+	color: #0063dd;
+	font-weight: 700;
+	line-height: 20px;
+	font-size: 16px;
+	position: relative;
+	left: -3px;
+}
+.checked {
+	background: #0f7bff;
+	color: #fff;
+}
+
+.price__card { 
+	display: flex; 
+	flex-shrink: 0;   
+	flex-direction: column;
+	align-items: center;            
+	width: 362px;
+	height: 576px;
+	box-shadow: 0px 4px 20px rgba(0, 78, 172, 0.08);
+	border-radius: 5px;
+	padding-top: 40px;
+	margin-right: 30px;
+	&:last-child {  
+		margin-right: 0px;
+	}
+}
+.card__img {
+	width: 114px;
+	height: 114px;
+	margin-bottom: 20px;
+}
+.card__title {
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 22px;
+	margin-bottom: 48px;
+	position: relative;
+	&::after {
+		content: "";
+		position: absolute;
+		width: 303px;
+		height: 2px;
+		left: -112px;
+		top: 48px;
+		background: #e9f3f8;
+	}
+}
+.card__advantages {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 184%;
+	text-align: center;
+	margin-bottom: 26px; 
+}
+.card__price { 
+	font-weight: 500;
+	font-size: 32px;
+	line-height: 22px;
+	color: #0f7bff;
+	margin-bottom: 25px;
+	&:first-letter {
+		font-size: 18px;
+		  
+	}
+}
+.card__btn-primary {
+	background: #0f7bff;
+	border-radius: 25px;
+	padding: 15px 51px;
+	color: #fff;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+}
+.card__btn-secondary {
+	background: #ffffff;
+	border: 2px solid #0f7bff;
+	border-radius: 25px;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	color: #0f7bff;
+	padding: 15px 51px;
+}
