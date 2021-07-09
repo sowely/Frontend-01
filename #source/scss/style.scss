@@ -2,6 +2,7 @@
 @import "header.scss";
 @import "features.scss";
 @import "about.scss";
+@import "work.scss";
 
 body {
 	font-family: "Quicksand", sans-serif;
@@ -12,6 +13,7 @@ body {
 .wrapper {
 	max-width: 1146px;
 	margin: 0 auto;
+	padding: 0 15px;
 }
 
-// -------------
+// -------------price
