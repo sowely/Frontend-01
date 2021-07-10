@@ -1,12 +1,14 @@
 .price {
 	margin: 130px 0;
 	display: flex;
-	// justify-content: space-between;
+	justify-content: space-between;
 	align-items: center;
 }
 .price__info {
-	max-width: 333px;
-	margin-right: 60px;
+	// max-width: 333px;
+	width: 31.6%;
+	padding-right: 30px;
+	// margin-right: 60px;
 	overflow: hidden;
 }
 .info__title {
@@ -51,20 +53,22 @@
 	color: #fff;
 }
 
-.price__card { 
-	display: flex; 
-	flex-shrink: 0;   
+.price__card {
+	display: flex;
+	flex-shrink: 0;
 	flex-direction: column;
-	align-items: center;            
-	width: 362px;
+	align-items: center;
+	position: relative;
+	// width: 362px;
+	width: 31.6%;
 	height: 576px;
 	box-shadow: 0px 4px 20px rgba(0, 78, 172, 0.08);
 	border-radius: 5px;
-	padding-top: 40px;
-	margin-right: 30px;
-	&:last-child {  
-		margin-right: 0px;
-	}
+	padding: 40px 98px 46px;
+	// margin-right: 30px;
+	// &:last-child {
+	// margin-right: 0px;
+	// }
 }
 .card__img {
 	width: 114px;
@@ -76,25 +80,33 @@
 	font-size: 18px;
 	line-height: 22px;
 	margin-bottom: 48px;
-	position: relative;
-	&::after {
-		content: "";
-		position: absolute;
-		width: 303px;
-		height: 2px;
-		left: -112px;
-		top: 48px;
-		background: #e9f3f8;
-	}
+	// position: relative;
+	// &::after {
+	// 	content: "";
+	// 	position: absolute;
+	// 	width: 83%;
+	// 	height: 2px;
+	// 	left: -112px;
+	// 	top: 48px;
+	// 	background: #e9f3f8;
+	// }
+}
+.card__line {
+	position: absolute;
+	top: 38%;
+	width: 83%;
+	// width: 303px;
+	height: 2px;
+	background-color: #e9f3f8;
 }
 .card__advantages {
 	font-weight: 300;
 	font-size: 16px;
 	line-height: 184%;
 	text-align: center;
-	margin-bottom: 26px; 
+	margin-bottom: 26px;
 }
-.card__price { 
+.card__price {
 	font-weight: 500;
 	font-size: 32px;
 	line-height: 22px;
@@ -102,13 +114,13 @@
 	margin-bottom: 25px;
 	&:first-letter {
 		font-size: 18px;
-		  
 	}
 }
 .card__btn-primary {
 	background: #0f7bff;
+	border: 2px solid #0f7bff;
 	border-radius: 25px;
-	padding: 15px 51px;
+	padding: 15px 49px;
 	color: #fff;
 	font-weight: 700;
 	font-size: 16px;
@@ -122,5 +134,5 @@
 	font-size: 16px;
 	line-height: 20px;
 	color: #0f7bff;
-	padding: 15px 51px;
+	padding: 15px 49px;
 }

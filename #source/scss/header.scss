@@ -2,8 +2,8 @@
 	display: flex;
 	flex-direction: column;
 	max-height: 1029px;
-	background: url("../img/1-header/header-bg.svg") no-repeat right bottom; //для больших экранов до 1920
-	// background: url("../img/1-header/header-bg.svg") no-repeat center / cover; //для 1920 и меньше
+	// background: url("../img/1-header/header-bg.svg") no-repeat right bottom; //для больших экранов до 1920
+	background: url("../img/1-header/header-bg.svg") no-repeat center / cover; //для 1920 и меньше
 		overflow: hidden;
 	// z-index: -4;	
 	// background: linear-gradient(206.38deg, #0f7bff 8.31%, #0063dd 61.03%);

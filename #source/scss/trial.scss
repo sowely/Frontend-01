@@ -1,0 +1,52 @@
+.trial {
+	display: flex;
+	flex-direction: column;
+	background: #f5fcfd;
+	padding-top: 133px;
+	padding-bottom: 113px;
+	&__content {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		margin: 0 auto;
+		width: 40%;
+	}
+	&__text {
+		justify-self: start;
+		flex-shrink: 0;
+	}
+	&__title {
+		font-weight: 700;
+		font-size: 32px;
+		line-height: 40px;
+		margin-bottom: 25px;
+	}
+
+	&__subtitle {
+		font-weight: 300;
+		font-size: 16px;
+		line-height: 150%;
+	}
+	&__btn {
+		flex-shrink: 0;
+		align-self: center;
+		justify-self: end;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 20px;
+		color: #ffffff;
+		background: #0f7bff;
+		border-radius: 25px;
+		padding: 14px 111px 14px 68px;
+		position: relative;
+		& span:after {
+			content: "";
+			position: absolute;
+			width: 35px;
+			height: 16px;
+			top: 16px;
+			left: 166px;
+			background: url("../img/8-trial/white-arrow.svg") no-repeat;
+		}
+	}
+}
