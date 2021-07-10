@@ -1,0 +1,85 @@
+.testimonials {
+	background: #f5fcfd;
+	position: relative;
+	overflow: hidden;
+	& .wrapper {
+		display: flex;
+	}
+}
+.testimonials__back {
+	max-width: 392px;
+	margin-right: 98px;
+	overflow: visible;
+}
+.testimonials__content {
+	margin-top: 113px;
+	margin-bottom: 144px;
+}
+.testimonials__img {
+	position: relative;
+	right: 490px;
+}
+.testimonials__title {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 40px;
+	margin-bottom: 40px;
+}
+.testimonials__reviews {
+}
+.reviews__cards {
+	display: flex;
+	overflow: unset;
+	margin-bottom: 37px;
+}
+.review__card {
+	max-width: 362px;
+	padding: 40px 0 40px 30px;
+	box-shadow: 0px 4px 16px rgba(0, 66, 148, 0.08);
+	background: #fff;
+	position: relative;
+	margin-right: 30px;
+	flex-shrink: 0;
+}
+.review-card__title {
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 22px;
+	margin-bottom: 10px;
+}
+.review-card__subtitle {
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 17px;
+	color: #999999;
+	margin-bottom: 25px;
+}
+.review-card__img {
+	position: absolute;
+	top: 50px;
+	right: 40px;
+}
+.review-card__text {
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 20px;
+	color: #999999;
+}
+.pagination {
+	display: flex;
+}
+.pagination__item {
+	width: 12px;
+	height: 12px;
+	background: #f5fcfd;
+	border: 2px solid #0063dd;
+	box-sizing: border-box;
+	border-radius: 32px;
+	margin-right: 8px;
+}
+.pagination-active {
+	width: 38px;
+	background: #0063DD;
+}
+.pagination__link {
+}
