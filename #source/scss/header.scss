@@ -4,17 +4,20 @@
 	max-height: 1029px;
 	// background: url("../img/1-header/header-bg.svg") no-repeat right bottom; //для больших экранов до 1920
 	background: url("../img/1-header/header-bg.svg") no-repeat center / cover; //для 1920 и меньше
-		overflow: hidden;
-	// z-index: -4;	
+	overflow: hidden;
+	// z-index: -4;
 	// background: linear-gradient(206.38deg, #0f7bff 8.31%, #0063dd 61.03%);
 	// box-shadow: -7px -7px 32px rgba(0, 30, 67, 0.06);
 }
 .header__nav {
-	width: 1644px;
-	margin: 0 auto;
-	display: flex;
-	justify-content: space-between;
+	// width: 1644px;
+	// margin: 0 auto;
+	// display: flex;
+	// justify-content: space-between;
 	margin-bottom: 88px;
+	display: grid;
+	grid-template-columns: 1fr auto minmax(60px,893px) auto minmax(30px,52px) auto 1fr;
+	align-items: center;
 }
 .header__logo {
 	display: flex;
@@ -31,13 +34,19 @@
 	min-width: 179px;
 	min-height: 100px;
 	// margin: 0 auto;
+	grid-column-start: 2;
+	grid-column-end: 3;
 }
 .header__menu {
-	min-width: 572px;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	// min-width: 572px;
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	grid-column-gap: 40px;
+	// align-items: center;
+	// justify-content: space-between;
 	// margin: 0 auto;
+	grid-column-start: 4;
+	grid-column-end: 5;
 }
 .menu__item {
 	font-weight: 500;
@@ -57,12 +66,13 @@
 	// text-decoration: none;
 	// }
 }
-.btn-sign-up a {
-	padding: 15px 51px;
+.btn-sign-up {
+	padding: 15px 52px;
 	color: #fff;
 	background-color: #0063dd;
 	border-radius: 25px;
-	margin-left: 52px;
+	grid-column-start: 6;
+	grid-column-end: 7;
 	&:hover {
 		color: #fff;
 	}
@@ -85,31 +95,37 @@
 	margin-bottom: 33px;
 }
 .header__btns {
-	display: flex;
-	justify-content: center;
-	margin: 0 auto 108px;
-	& .btn-secondary {
-		margin-left: 30px;
-	}
+	// display: flex;
+	// justify-content: center;
+	// margin: 0 auto 108px;
+	margin-bottom: 108px;
+	// & .btn-secondary {
+	display: grid;
+	align-items: center;
+	grid-template-columns: 1fr 1fr;
+	grid-column-gap: 30px;
 }
 .btn-cta {
+	text-align: center;
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 20px;
 	color: #ffffff;
 	background: #0f7bff;
 	border-radius: 25px;
-	padding: 17px 44px 15px;
-	margin-right: 30px;
+	padding: 14px 44px 16px 45px;
+	justify-self: end;
 }
 .btn-second {
+	text-align: center;
 	font-size: 16px;
-	font-weight: bold;
+	font-weight: 700;
 	line-height: 20px;
 	color: #0f7bff;
 	border: 2px solid #0f7bff;
 	border-radius: 25px;
-	padding: 15px 44px 17px;
+	padding: 12px 45px 13px;
+	justify-self: start;
 }
 .btn-hover:hover {
 	// box-shadow: 0 0 20px 10px rgba(0, 99, 221, 0.25);

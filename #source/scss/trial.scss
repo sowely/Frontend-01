@@ -1,15 +1,17 @@
 .trial {
 	display: flex;
 	flex-direction: column;
+	align-items: center;
 	background: #f5fcfd;
 	padding-top: 133px;
 	padding-bottom: 113px;
 	&__content {
+		width: 754px;
+		flex-shrink: 1;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
-		margin: 0 auto;
-		width: 40%;
+		align-items: center;
 	}
 	&__text {
 		justify-self: start;
@@ -28,6 +30,7 @@
 		line-height: 150%;
 	}
 	&__btn {
+		cursor: pointer;
 		flex-shrink: 0;
 		align-self: center;
 		justify-self: end;
