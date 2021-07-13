@@ -63,3 +63,14 @@ function validateEmail(email) {
 	let re = /\S+@\S+\.\S+/;
 	return re.test(email);
 }
+
+//slider
+const reviewCards = document.querySelectorAll('.review__card')
+const pagination = document.querySelector('.pagination')
+const paginationItem = `<li class="pagination__item">
+<a class="pagination__link" href="#"></a>
+</li>`
+
+for (i = 0; i < reviewCards.length; i++) {
+	pagination.insertAdjacentHTML('beforeend', paginationItem)
+}

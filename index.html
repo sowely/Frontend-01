@@ -9,12 +9,6 @@
       href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap"
       rel="stylesheet"
     />
-    <!-- <link
-      rel="stylesheet"
-      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
-      crossorigin="anonymous"
-    /> -->
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/main.js" defer></script>
   </head>
@@ -47,8 +41,8 @@
         <img class="device" src="../img/1-header/Phone 3.png" alt="phone-3" />
         <img class="device" src="../img/1-header/Phone 2.png" alt="phone-2" />
       </div>
-      <a class="btn-down" href="#price"></a>
     </header>
+    <div class="btn-down"><a class="btn-down-link" href="#price"></a></div>
     <!-- features -->
     <div class="features">
       <div class="wrapper">
@@ -99,9 +93,10 @@
           <div class="about-img-back">
             <img
               class="about__img"
-              src="../img/3-about/about-1.png"
+              src="img/3-about/about-1.png"
               alt="about-1"
             />
+            <!-- <img src="img/3-about/Back1.png" alt="" class="about__back"> -->
           </div>
           <div class="about__info">
             <h2 class="about__title">Easy Messaging</h2>
@@ -121,6 +116,7 @@
               src="../img/3-about/about-2.png"
               alt="about-2"
             />
+            <!-- <img src="img/3-about/Back2.png" alt="" class="about__back"> -->
           </div>
           <div class="about__info">
             <h2 class="about__title">Keep In Touch</h2>
@@ -191,6 +187,7 @@
             <button class="info__btn-year">Yearly</button>
           </div>
         </div>
+        <div class="price__cards">
         <!--  -->
         <div class="price__card">
           <img class="card__img" src="../img/5-price/prem.png" alt="" />
@@ -221,7 +218,7 @@
           <p class="card__price">$<span>19.00</span></p>
           <a href="" class="card__btn-secondary">Try Now</a>
         </div>
-      </div>
+      </div></div>
     </div>
     <!-- testimonials -->
     <div class="testimonials">
@@ -276,9 +273,22 @@
                   do eiusmod tempor incididunt ut labore etamet.
                 </p>
               </div>
+              <div class="review__card">
+                <h5 class="review-card__title">Raisa Moni</h5>
+                <h6 class="review-card__subtitle">Envato Customer</h6>
+                <img
+                  class="review-card__img"
+                  src="../img/6-testimonials/twitter-Vector.svg"
+                  alt="twitter"
+                />
+                <p class="review-card__text">
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed
+                  do eiusmod tempor incididunt ut labore etamet.
+                </p>
+              </div>
             </div>
             <ul class="pagination">
-              <li class="pagination__item pagination-active">
+              <!-- <li class="pagination__item pagination-active">
                 <a class="pagination__link" href="#"></a>
               </li>
               <li class="pagination__item">
@@ -289,7 +299,7 @@
               </li>
               <li class="pagination__item">
                 <a class="pagination__link" href="#"></a>
-              </li>
+              </li> -->
             </ul>
           </div>
         </div>

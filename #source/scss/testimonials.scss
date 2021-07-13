@@ -4,22 +4,26 @@
 	overflow: hidden;
 	& .wrapper {
 		display: flex;
+		column-gap: 17%;
 	}
 }
 .testimonials__back {
-	max-width: 392px;
-	margin-right: 98px;
+	// max-width: 392px;
+	width: 25%;
+	// margin-right: 98px;
 	overflow: visible;
 }
 .testimonials__content {
-	margin-top: 113px;
-	margin-bottom: 144px;
+
+	padding-top: 113px;
+	padding-bottom: 144px;
 }
 .testimonials__img {
 	position: relative;
-	right: 490px;
+	right: 600px;
 }
 .testimonials__title {
+	overflow: auto;
 	font-weight: 700;
 	font-size: 32px;
 	line-height: 40px;

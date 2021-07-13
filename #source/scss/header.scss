@@ -2,12 +2,10 @@
 	display: flex;
 	flex-direction: column;
 	max-height: 1029px;
-	// background: url("../img/1-header/header-bg.svg") no-repeat right bottom; //для больших экранов до 1920
-	background: url("../img/1-header/header-bg.svg") no-repeat center / cover; //для 1920 и меньше
+	// background: url("../img/1-header/header-bg.svg") no-repeat right bottom;
+	background: url("../img/1-header/header-bg.svg") no-repeat center / cover;
 	overflow: hidden;
-	// z-index: -4;
-	// background: linear-gradient(206.38deg, #0f7bff 8.31%, #0063dd 61.03%);
-	// box-shadow: -7px -7px 32px rgba(0, 30, 67, 0.06);
+	padding: 0 5px;
 }
 .header__nav {
 	// width: 1644px;
@@ -16,11 +14,12 @@
 	// justify-content: space-between;
 	margin-bottom: 88px;
 	display: grid;
-	grid-template-columns: 1fr auto minmax(60px,893px) auto minmax(30px,52px) auto 1fr;
+	grid-template-columns: 1fr auto minmax(60px, 893px) auto minmax(30px, 52px) auto 1fr;
 	align-items: center;
 }
 .header__logo {
 	display: flex;
+	cursor: pointer;
 	justify-content: center;
 	align-items: center;
 	background: #0f7bff;
@@ -141,24 +140,28 @@
 .device {
 	object-fit: contain;
 	position: relative;
-	top: -135px;
+	top: -130px;
 	left: -108px;
 	&:first-child {
 		order: -2;
-		top: -135px;
+		top: -129px;
 		left: 90px;
 	}
 	&:last-child {
 		order: -1;
-		top: -42px;
+		top: -37px;
 		left: 0px;
 	}
 }
-.btn-down::after {
+.btn-down {
+	position: relative;
+}
+.btn-down-link {
 	content: "";
+	cursor: pointer;
 	position: absolute;
 	left: 50%;
-	top: -0.5 * 70px + 1029px;
+	top: -35px;
 	transform: translate(-50%, 0);
 	width: 70px;
 	height: 70px;
