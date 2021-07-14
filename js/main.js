@@ -11,7 +11,7 @@ btnUp.addEventListener('click', (e) => {
 
 btnDown.addEventListener('click', (e) => {
 	e.preventDefault();
-	blockPrice.scrollIntoView({ behavior: 'smooth', block: 'center' });
+	blockPrice.scrollIntoView({ behavior: 'smooth' }); //, block: 'center'
 })
 
 
@@ -74,3 +74,28 @@ const paginationItem = `<li class="pagination__item">
 for (i = 0; i < reviewCards.length; i++) {
 	pagination.insertAdjacentHTML('beforeend', paginationItem)
 }
+const paginationActive = document.querySelector('.pagination__item')
+paginationActive.classList.add('pagination-active')
+
+
+//menu
+const menuBtn = document.querySelector('.menu__btn')
+const menuItems = document.querySelectorAll('.menu__item')
+
+menuBtn.insertAdjacentHTML('afterend', `<div class="side__menu"></div>`)
+const sideMenu = document.querySelector('.side__menu')
+
+menuItems.forEach((el) => {
+	// console.log(el.innerText)
+	sideMenu.insertAdjacentHTML('beforeend',
+		`
+	<a class="side__item" href="#">${el.innerText}</a>
+	`)
+
+})
+
+menuBtn.addEventListener('click', (e) => {
+	e.preventDefault()
+	menuBtn.classList.toggle('menu__btn-active')
+	sideMenu.classList.toggle('side__menu-active')
+})

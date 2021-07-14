@@ -13,14 +13,19 @@
 		color: #fff;
 		margin-bottom: 30px;
 	}
+	&__form {
+		width: 558px;
+		position: relative;
+	}
 	&__input {
+		width: 100%;
 		background: #0063dd;
-		border-radius: 25px 0px 0px 25px;
+		border-radius: 25px 25px 25px 25px;
 		font-weight: 500;
 		font-size: 16px;
 		line-height: 150%;
 		color: #fff;
-		padding: 12px 190px 14px 28px;
+		padding: 12px 0 14px 28px;
 		&::placeholder {
 			color: #fff;
 			font-weight: 400;
@@ -30,9 +35,9 @@
 	}
 	&__input-btn {
 		cursor: pointer;
-		// position: absolute;
-		position: relative;
-		right: 4px;
+		float: right;
+		position: absolute;
+		right: 0px;
 		padding: 12px 40px 14px;
 		background: #fff;
 		border-radius: 0px 25px 25px 0px;

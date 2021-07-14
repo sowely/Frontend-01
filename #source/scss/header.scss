@@ -8,6 +8,7 @@
 	padding: 0 5px;
 }
 .header__nav {
+	position: relative;
 	// width: 1644px;
 	// margin: 0 auto;
 	// display: flex;
@@ -41,6 +42,8 @@
 	display: grid;
 	grid-template-columns: repeat(4, auto);
 	grid-column-gap: 40px;
+	align-items: center;
+	// position: relative;
 	// align-items: center;
 	// justify-content: space-between;
 	// margin: 0 auto;
@@ -60,10 +63,6 @@
 		color: #0f7cff;
 		// text-decoration: underline; //мб убрать
 	}
-	// & a:active {
-	// color: #0f7cff;
-	// text-decoration: none;
-	// }
 }
 .btn-sign-up {
 	padding: 15px 52px;
@@ -75,6 +74,56 @@
 	&:hover {
 		color: #fff;
 	}
+}
+.menu__btn {
+	grid-column-start: 5;
+	display: none;
+	width: 50px;
+	height: 50px;
+	background-color: #0063dd;
+	border-radius: 50%;
+	position: relative;
+
+	& span,
+	& span::before,
+	& span::after {
+		position: absolute;
+		width: 20px;
+		height: 2px;
+		background-color: #fff;
+		left: 50%;
+		margin-left: -10px;
+		top: 50%;
+		margin-top: -1px;
+	}
+
+	& span::before,
+	& span::after {
+		content: "";
+		display: block;
+		transition: 0.2s;
+	}
+	& span::before {
+		transform: translateY(-5px);
+	}
+	& span::after {
+		transform: translateY(5px);
+	}
+
+	&-active {
+		& span {
+			height: 0;
+		}
+		& span::before {
+			transform: rotate(-45deg);
+		}
+		& span::after {
+			transform: rotate(45deg);
+		}
+	}
+}
+.side__menu{
+	display: none;
 }
 .header__title {
 	text-align: center;
